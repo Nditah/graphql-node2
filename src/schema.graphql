@@ -45,6 +45,7 @@ input LinkOrderByInput {
   description: Sort
   url: Sort
   createdAt: Sort
+  updatedAt: Sort
 }
 
 enum Sort {
@@ -53,6 +54,7 @@ enum Sort {
 }
 
 type Feed {
+  id: ID!
   links: [Link!]!
   count: Int!
 }
